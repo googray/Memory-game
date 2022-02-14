@@ -1,0 +1,40 @@
+.card {
+  cursor: pointer;
+  box-shadow: 5px 6px 0 $color-bgrd-field-plus;
+  border-radius: 0.4rem;
+  height: 4rem;
+  width: 4rem;
+  background: $color-card;
+  @include media-tablet {
+    height: 6rem;
+    width: 6rem;
+  }
+  @include media-laptop {
+    height: 10rem;
+    width: 10rem;
+  }
+}
+
+img {
+  user-select: none;
+  width: 3.5rem;
+}
+
+.field img {
+  visibility: hidden;
+  @include media-tablet {
+    width: 5.5rem;
+  }
+  @include media-laptop {
+    width: 9.5rem;
+  }
+}
+
+.flipflop img {
+  background: $color-bgrd;
+  visibility: visible;
+}
+
+.match img {
+  background: #3daaf3;
+}

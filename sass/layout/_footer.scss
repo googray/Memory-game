@@ -1,0 +1,84 @@
+.main-footer {
+  background-color: $color-main;
+  max-width: 100%;
+  height: 50px;
+}
+
+.footer-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 3px 20px;
+  color: $color-bgrd;
+}
+
+.left-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  margin: 0 10px 0 0;
+  padding-top: 10px;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.year {
+  margin: 0 10px;
+  padding: 10px;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2rem;
+}
+
+.github {
+  margin: 0 10px;
+}
+
+.github {
+  text-decoration: none;
+  color: $color-bgrd;
+  transition: 0.3s;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  font-weight: 300;
+  &:hover {
+    color: #bdae82;
+  }
+}
+
+.rs-link {
+  text-decoration: none;
+  color: $color-bgrd;
+  transition: 0.3s;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  &:hover {
+    color: #bdae82;
+  }
+}
+
+.right-part {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.rs-ico {
+  width: 110px;
+  height: 40px;
+  background-image: url(../assets/svg/rs_school_js1.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover {
+    filter: invert(26%) sepia(15%) saturate(638%) hue-rotate(7deg)
+      brightness(92%) contrast(87%);
+  }
+}

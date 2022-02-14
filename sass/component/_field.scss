@@ -1,0 +1,50 @@
+.field {
+  background: linear-gradient(to bottom, $color-field, $color-field-cover);
+  border-radius: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 1rem;
+  padding: 0.3rem;
+  box-shadow: 4px 3px 16px 0 $color-bgrd-field-plus;
+  @include media-tablet {
+    height: 30rem;
+    width: 30rem;
+    padding: 0.5rem;
+  }
+  @include media-laptop {
+    height: 50rem;
+    width: 50rem;
+  }
+}
+
+.field .card.flipflop {
+  background: $color-bgrd;
+  cursor: default;
+  transform: rotateY(180deg);
+  transition: transform 0.3s linear;
+  pointer-events: none;
+  visibility: visible;
+}
+
+.field .card.match {
+  background: #3daaf3;
+  visibility: visible;
+  cursor: default;
+  animation: pulse 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

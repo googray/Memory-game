@@ -1,0 +1,12 @@
+.main-title {
+  font-size: 4rem;
+  font-weight: 400;
+  @include media-laptop {
+    font-size: 5rem;
+  }
+}
+
+.header-description {
+  font-size: 2.5rem;
+  font-weight: 700;
+}

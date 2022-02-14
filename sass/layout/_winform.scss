@@ -1,0 +1,76 @@
+.form {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-bgrd-field;
+  background-color: $color-bgrd-field-plus;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-bgrd;
+  margin: 5% auto;
+  border: 0.8rem solid $color-card; // #fdc938;
+  padding-right: 2rem;
+  width: 70%;
+}
+
+.congrats-text {
+  @include media-tablet {
+    font-size: 4rem;
+  }
+  @include media-laptop {
+    font-size: 5rem;
+  }
+}
+
+.congrats-desc {
+  @include media-laptop {
+    font-size: 2.3rem;
+  }
+}
+
+.close {
+  align-self: flex-end;
+  color: $color-field;
+  font-size: 6rem;
+  &:hover {
+    color: $color-field-cover;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &:focus {
+    color: $color-field-cover;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+.form-img {
+  display: inline-block;
+  margin: 1rem 0 1rem;
+  width: 20rem;
+  @include media-laptop {
+    width: 30rem;
+  }
+}
+
+p.statist {
+  font-weight: 700;
+  &:last-child {
+    margin-bottom: 1rem;
+  }
+}
+
+.buttons {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,48 @@
+.high-results {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $color-bgrd-field;
+  background-color: rgba(47, 62, 73, 0.9);
+}
+
+.results-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-bgrd;
+  margin: 5% auto;
+  border: 0.8rem solid $color-field;
+  padding-right: 2rem;
+  border-radius: 0.6rem;
+  width: 70%;
+}
+
+.final-result {
+  @include media-tablet {
+    font-size: 4rem;
+  }
+  @include media-laptop {
+    font-size: 5rem;
+  }
+}
+.result-list {
+  @include media-laptop {
+    font-size: 2.3rem;
+  }
+  margin-bottom: 5rem;
+}
+
+.result-list li {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: $color-bgrd-field-plus;
+  @include media-laptop {
+    font-size: 2rem;
+  }
+}

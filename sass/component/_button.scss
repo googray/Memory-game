@@ -1,0 +1,62 @@
+.reset-btn {
+  margin-bottom: 10px;
+  cursor: pointer;
+  background: $color-main;
+  @include media-laptop {
+    font-size: 1.2rem;
+  }
+}
+
+.btn {
+  border: none;
+  border-radius: 0.8rem;
+  color: $color-bgrd;
+  box-shadow: 4px 3px 16px 0 $color-bgrd-field-plus;
+  padding: 0.8rem;
+}
+
+.try-again-btn {
+  background-color: $color-field;
+  margin-bottom: 1rem;
+  &:hover {
+    background-color: $color-field-cover;
+  }
+
+  @include media-tablet {
+    font-size: 1.8rem;
+  }
+  @include media-laptop {
+    font-size: 2.5rem;
+  }
+}
+
+.show-results-btn {
+  background-color: $color-field;
+  margin-bottom: 1rem;
+  &:hover {
+    background-color: $color-field-cover;
+  }
+
+  @include media-tablet {
+    font-size: 1.8rem;
+  }
+  @include media-laptop {
+    font-size: 2.5rem;
+  }
+}
+
+.go-home {
+  background-color: #5cf;
+  margin-bottom: 1rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #28e;
+  }
+
+  @include media-tablet {
+    font-size: 1.8rem;
+  }
+  @include media-laptop {
+    font-size: 2.5rem;
+  }
+}

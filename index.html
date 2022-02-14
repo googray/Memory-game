@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&family=Roboto:wght@300;500;700&family=Space+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./sass/style.css" />
+       <title>Memory game</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="main-header">
+        <h1 class="main-title">Memory Game</h1>
+        </header>
+      <section class="score-block">
+        <h3 class="score-panel">Score Panel</h3>
+        <ul class="point-position" id="point-position">
+          <li class="point"><i class="fa fa-star"></i></li>
+          <li class="point"><i class="fa fa-star"></i></li>
+          <li class="point"><i class="fa fa-star"></i></li>
+        </ul>
+
+        <span class="move-counter">0</span>Moves
+        <div class="timer-block">
+          <span class="timer"
+            ><i class="fa fa-hourglass-start"></i>Timer: 00:00</span
+          >
+        </div>
+        <div class="reset">
+          <button class="reset-btn btn">
+            Reset <i class="fa fa-repeat"></i>
+          </button>
+        </div>
+      </section>
+         <section class="win-game__form">
+        <div class="form" id="form">
+          <div class="form-content">
+            <span class="close">&times;</span>
+            <h2 class="congrats-text">Congrats!!!</h2>
+            <p class="congrats-desc">
+              You won the game and find all pairs of cards.
+            </p>
+            <img
+              src="./assets/png/einstain.png"
+              alt="Einstain congrats you"
+              class="form-img"
+            />
+            <div class="buttons">
+              <button class="try-again-btn btn">Try Again?</button>
+              <button class="show-results-btn btn">Last 10 scores</button>
+            </div>
+          </div>
+        </div>
+      </section>
+       <section class="results-form">
+        <div class="high-results" id="high-results">
+          <div class="results-content">
+<h2 class="final-result">Last 10 scores</h1>
+<ul class="result-list" id="result-list"></ul>
+<button class="go-home btn">Go Home<i class="fas fa-home"></i></button>
+</div>
+</div>
+</section>    
+      <ul class="field"></ul>
+    </div>
+  </body>
+  <footer class="main-footer">
+    <div class="wrapper footer-wrapper">
+      <div class="left-part">
+        <p class="copyright">©</p>
+        <p class="year">2022</p>
+        <a class="github" href="https://github.com/googray">github</a>
+      </div>
+      <div class="rolling-part">
+        <a href="https://rs.school/js-stage0/" class="rs-link"
+          >Rolling Scopes School</a
+        >
+      </div>
+      <div class="right-part">
+        <a href="https://rs.school/js-stage0/" class="rs-link"
+          ><div class="rs-ico"></div
+        ></a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="./js/app.js"></script>
+</html>

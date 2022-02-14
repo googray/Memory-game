@@ -1,0 +1,26 @@
+.score-panel {
+  font-size: 1.4rem;
+  padding: 0.5rem 0 0.5rem;
+}
+
+.point-position > li {
+  display: inline-block;
+  padding: 0.4rem;
+}
+
+.move-counter {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.timer-block {
+  background: $color-bgrd;
+  border-radius: 0.4rem;
+  color: $color-main;
+  margin: 0.2rem;
+  padding: 0.6rem;
+}
+
+.timer {
+  font-size: 1.2rem;
+}
