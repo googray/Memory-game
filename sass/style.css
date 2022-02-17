@@ -186,7 +186,7 @@ ul > li {
   background: #ffffff;
   border-radius: 0.4rem;
   color: #000000;
-  margin: 0.2rem;
+  margin: 0.2rem 0 0.6rem 0;
   padding: 0.6rem;
 }
 
@@ -211,24 +211,47 @@ ul > li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #ffffff;
-  margin: 5% auto;
+  margin: 1% auto;
   border: 0.8rem solid orange;
-  padding-right: 2rem;
-  width: 70%;
+  padding: auto;
+  width: 75%;
 }
 
+.congrats-text {
+  padding: auto;
+  font-size: 1.8rem;
+}
+@media (min-width: 400px) {
+  .congrats-text {
+    font-size: 2.8rem;
+  }
+}
 @media (min-width: 550px) {
   .congrats-text {
-    font-size: 4rem;
+    font-size: 3.8rem;
   }
 }
 @media (min-width: 800px) {
   .congrats-text {
-    font-size: 5rem;
+    font-size: 4.8rem;
   }
 }
 
+.congrats-desc {
+  font-size: 1rem;
+}
+@media (min-width: 400px) {
+  .congrats-desc {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 550px) {
+  .congrats-desc {
+    font-size: 1.8rem;
+  }
+}
 @media (min-width: 800px) {
   .congrats-desc {
     font-size: 2.3rem;
@@ -238,7 +261,20 @@ ul > li {
 .close {
   align-self: flex-end;
   color: limegreen;
-  font-size: 6rem;
+  font-size: 1.8rem;
+  padding-right: 4px;
+}
+@media (min-width: 400px) {
+  .close {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 800px) {
+  .close {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
 }
 .close:hover {
   color: #0ca00c;
@@ -254,7 +290,12 @@ ul > li {
 .form-img {
   display: inline-block;
   margin: 1rem 0 1rem;
-  width: 20rem;
+  width: 15rem;
+}
+@media (min-width: 550px) {
+  .form-img {
+    width: 20rem;
+  }
 }
 @media (min-width: 800px) {
   .form-img {
@@ -263,10 +304,32 @@ ul > li {
 }
 
 p.statist {
-  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+@media (min-width: 400px) {
+  p.statist {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+}
+@media (min-width: 800px) {
+  p.statist {
+    font-weight: 700;
+    font-size: 2rem;
+  }
 }
 p.statist:last-child {
   margin-bottom: 1rem;
+}
+
+.fa-star {
+  color: orange;
+}
+
+.fa-hourglass-start {
+  padding-right: 8px;
 }
 
 .buttons {
@@ -274,6 +337,13 @@ p.statist:last-child {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
+}
+@media (min-width: 400px) {
+  .buttons {
+    width: 50%;
+    gap: 10px;
+  }
 }
 
 .high-results {
@@ -394,6 +464,10 @@ p.statist:last-child {
 }
 .go-home:hover {
   background-color: #28e;
+}
+.go-home .fa-home {
+  font-size: 24px;
+  padding-left: 10px;
 }
 @media (min-width: 550px) {
   .go-home {

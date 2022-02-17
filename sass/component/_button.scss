@@ -53,6 +53,11 @@
     background-color: #28e;
   }
 
+  .fa-home {
+    font-size: 24px;
+    padding-left: 10px;
+  }
+
   @include media-tablet {
     font-size: 1.8rem;
   }

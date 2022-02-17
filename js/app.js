@@ -90,6 +90,8 @@ function resetAll() {
   startTime = false;
   countTime.innerHTML =
     "<i class='fa fa-hourglass-start'></i>" + " Timer: 00:00";
+  point[1].firstElementChild.classList.add("fa-star");
+  point[2].firstElementChild.classList.add("fa-star");
   countPoint = 3;
   moves = 0;
   countMoves.innerHTML = 0;
@@ -102,6 +104,17 @@ function resetAll() {
 function moveCounter() {
   countMoves.innerHTML++;
   moves++;
+}
+
+function pointRange() {
+  if (moves === 14) {
+    point[2].firstElementChild.classList.remove("fa-star");
+    countPoint--;
+  }
+  if (moves === 18) {
+    point[1].firstElementChild.classList.remove("fa-star");
+    countPoint--;
+  }
 }
 
 function compariseOfTwo() {
@@ -125,6 +138,7 @@ function matchAre() {
     opens = [];
   }, 600);
   moveCounter();
+  pointRange();
 }
 
 function noMatchAre() {
@@ -135,13 +149,28 @@ function noMatchAre() {
     opens = [];
   }, 700);
   moveCounter();
+  pointRange();
+}
+
+function putContent() {
+  const contents = document.querySelector(".form-content");
+  for (let i = 0; i <= 3; i++) {
+    const contentItem = document.createElement("p");
+    contentItem.classList.add("statist");
+    contents.appendChild(contentItem);
+  }
+  let par = contents.querySelectorAll("p.statist");
+  par[0].innerHTML =
+    "Time to finish: " + min + " Minutes and " + sec + " Seconds";
+  par[1].innerHTML = "Moves to finish: " + moves;
+  par[2].innerHTML = "Your Point achived: " + countPoint + " out of 3";
 }
 
 function finishGame() {
   if (match.length === 16) {
     timerStop();
     setTimeout(showForm, 2000);
-    // putContent();
+    putContent();
     saveLastResult();
   }
 }
