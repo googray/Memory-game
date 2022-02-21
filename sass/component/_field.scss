@@ -30,6 +30,13 @@
   visibility: visible;
 }
 
+.field .card {
+  background: $color-card;
+  cursor: pointer;
+  transform: rotateY(360deg);
+  transition: transform 0.6s linear;
+}
+
 .field .card.match {
   background: #3daaf3;
   visibility: visible;
